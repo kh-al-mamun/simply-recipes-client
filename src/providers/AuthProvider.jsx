@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React, { createContext, useEffect, useState } from 'react';
 import auth from '../../firebase.config';

@@ -3,7 +3,7 @@
     height: max(calc(100vh - 95px), 400px);
     font-size: 1.4rem;
     position: relative;
-    background: url(assets/main.jpeg) center/cover no-repeat;
+    background: url('/assets/main.jpeg') center/cover no-repeat;
     margin-bottom: 2rem;
     border-radius: 4px;
 }

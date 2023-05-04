@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './Categories.css';
 import { heroSvg } from '../../../Icons';
-import { Link, useNavigation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 import Spinner from '../LoaderSpinner/Spinner';
 
@@ -11,7 +11,7 @@ const Categories = () => {
     const[isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:3000/simply-recipes/categories')
+        fetch('https://assignment10-data.vercel.app/simply-recipes/categories')
         .then(res => res.json())
         .then(data => {
             setCategory(data);
@@ -35,7 +35,7 @@ const Categories = () => {
                     const catRemains = cat.category.slice(1, cat.length);
                     const catName = catFirst + catRemains;
                     return(
-                        <Link key={ind} className='category-card'>
+                        <Link to={`/categories/${cat.category}`} key={ind} className='category-card'>
                             <img src={cat.image} alt="" />
                             <div className='hero-svg'>{heroSvg}</div>
                             <span className='hero-text'>{catName}</span>

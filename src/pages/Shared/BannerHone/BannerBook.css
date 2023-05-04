@@ -1,7 +1,7 @@
 
 .banner-book-background{
     min-height: max(400px, 70vh);
-    background: url('assets/bg-book.png') center/cover no-repeat;
+    background: url('/assets/bg-book.png') center/cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;

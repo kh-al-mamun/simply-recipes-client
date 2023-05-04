@@ -2,6 +2,7 @@
 import React from 'react';
 import './Footer.css'
 import { footerIcon } from '../../../Icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -36,7 +37,7 @@ const Footer = () => {
 
             </div>
             <hr />
-            <p className='textCenter footer-foot'>© 2023 by Simple Recipe. Powered and secured by <b>CraftAwesome studio</b></p>
+            <p className='textCenter footer-foot'>© 2023 by Simple Recipe. Powered and secured by <Link to={'https://ahmedwakil66.github.io/craftawesome/'} style={{color: 'inherit', fontWeight: '500'}}>CraftAwesome studio</Link></p>
         </div>
     );
 };

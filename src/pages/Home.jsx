@@ -14,6 +14,7 @@ const Home = () => {
             <Categories />
             <Chefs />
             <BannerBook />
+            <p className='container section thanks-for-visiting'>Thanks for Visiting</p>
         </div>
     );
 };

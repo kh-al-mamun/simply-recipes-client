@@ -24,7 +24,7 @@ const Navbar = () => {
     return (
         <div className='header container'>
             <div className='logo-and-menu'>
-                <Link to={'/'}><img className='logo' src="assets/icons/logo.svg" alt="" /></Link>
+                <Link to={'/'}><img className='logo' src="/assets/icons/logo.svg" alt="" /></Link>
                 <button onClick={() => setOpenMenu(!openMenu)} className='menu-icon'>{menuIcon}</button>
             </div>
             <nav className={openMenu ? 'h-md-nav' : 'h-md-zero'}>

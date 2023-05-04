@@ -86,6 +86,13 @@ a{
     background-color: rgba(127, 255, 212, 0.39);
 }
 
+.thanks-for-visiting{
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 10px;
+    color: purple;
+}
+
 
 
 @media screen and (max-width: 767px) {
@@ -105,5 +112,13 @@ a{
 
     .btn{
         padding: 5px 10px;
+    }
+}
+
+
+@media screen and (max-width: 467px) {
+    .thanks-for-visiting{
+        font-size: 1.4rem;
+        letter-spacing: 5px;
     }
 }

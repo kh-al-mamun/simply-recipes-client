@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import './BannerBook.css';
+import { toast } from 'react-hot-toast';
 
 const BannerBook = () => {
     return (
@@ -9,9 +10,9 @@ const BannerBook = () => {
             <div className='banner-book'>
                 <div className='desc'>
                     <h4 className='special-dish-text'>Special Dish</h4>
-                    <h2>Get the book of most popular recipe</h2>
+                    <h2>Get our book of most popular recipe</h2>
                     <p></p>
-                    <button className='btn'>Get Your Copy!</button>
+                    <button onClick={() => toast('Coming Soon!')} className='btn'>Get Your Copy!</button>
                 </div>
                 <div>
                     <img src="assets/book.png" alt="" />

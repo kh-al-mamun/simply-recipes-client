@@ -11,7 +11,7 @@ const TodaysPick = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:3000/simply-recipes/todays-pick')
+        fetch('https://assignment10-data.vercel.app/simply-recipes/todays-pick')
             .then(res => res.json())
             .then(data => {
                 setTodaysPick(data);

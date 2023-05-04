@@ -9,6 +9,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
 import Blog from "../pages/Blog/Blog";
 import AboutUs from "../pages/AboutUs/AboutUs";
+import CategoryFoods from "../pages/CategoryFoods/CategoryFoods";
 
 
 const router = createBrowserRouter([
@@ -31,8 +32,14 @@ const router = createBrowserRouter([
                 loader: ({params}) => fetch(`https://assignment10-data.vercel.app/simply-recipes/chef/${params.chefId}`)
             },
             {
+                path: '/categories/:catName',
+                element: <CategoryFoods />,
+                loader: ({params}) => fetch(`https://assignment10-data.vercel.app/simply-recipes/categories/${params.catName}`)
+            },
+            {
                 path: '/blog',
-                element: <Blog />
+                element: <Blog />,
+                loader: () => fetch('https://assignment10-data.vercel.app/simply-recipes/q-and-a')
             },
             {
                 path: 'about',
